@@ -5,6 +5,8 @@ No seu terminal, cmd, power shell ou bash execute os seguintes comandos:
 - `flutter pub get`
 
 ### Rodando projeto
+> Primeiro baixe e rode a api feita em node no link https://github.com/juliovinnicius/teste_atak_api
+
 > A aplicação utiliza o recurso de generators do Flutter, logo precisamos rodar o build_runner para gerar os códigos necessários para o desenvolvimento.
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
