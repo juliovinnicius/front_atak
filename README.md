@@ -1,16 +1,19 @@
-# front_atak
+## Baixando o projeto
+No seu terminal, cmd, power shell ou bash execute os seguintes comandos:
+- `git clone https://github.com/juliovinnicius/front_atak.git`
+- `cd front_atak`
+- `flutter pub get`
 
-A new Flutter project.
+### Rodando projeto
+> A aplicação utiliza o recurso de generators do Flutter, logo precisamos rodar o build_runner para gerar os códigos necessários para o desenvolvimento.
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-## Getting Started
+> Se você estiver executando o servidor localmente e usando o emulador do Android, o endpoint do servidor deve ser 192.168.x.x em vez de localhost:3000. Portanto vá até o arquivo lib/modules/external/search_datasource_impl.dart e na linha 14 substitua o ip pelo o seu ipv4.
+![image](https://user-images.githubusercontent.com/50780080/201740080-d25189c7-6ab7-4527-8fc6-5ddf2644b87e.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Execute o comando
+```bash
+flutter run
+```
